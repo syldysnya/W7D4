@@ -6,8 +6,11 @@
 
 .left-nav > ul,
 .right-nav > ul {
-  flex-direction: column;
-  font-family: serif;
+  display: flex;
+  align-items: center;
+  // flex-direction: column;
+  font-family: sans-serif;
+  font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -16,14 +19,13 @@
   
   > ul {
     > li {
-      display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
   }
 
   span {
-
+    margin: 10px;
   }
 }
 
@@ -32,7 +34,8 @@
   > ul {
 
     > li {
-  
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     > li:last-of-type {
@@ -47,5 +50,5 @@
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
-
+  color: #f7f7f5;
 }
