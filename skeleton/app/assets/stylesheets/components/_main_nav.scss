@@ -1,17 +1,24 @@
 .main-nav {
-
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .left-nav > ul,
 .right-nav > ul {
-
+  flex-direction: column;
+  font-family: serif;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .left-nav {
-
+  
   > ul {
     > li {
-
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
